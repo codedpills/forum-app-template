@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Post details</title>
+</head>
+<body class="main-content-area">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Forum App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Users</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row forum-content-display">
+            <div class="col-8">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="assets/img/kid.jpg" alt="profile pic" class="rounded img-fluid img-thumbnails">
+                        </div>
+                        <div class="col">
+                            <div class="post_header">
+                                <h5>
+                                    Forum Title Here
+                                </h5>
+                                <div>
+                                    Asked by <a href="#">Jon Snow</a> on <span>20 Jan, 2019</span>
+                                </div>
+                                <div>
+                                    <span class="badge badge-pill badge-secondary">Technology</span>
+                                    <span class="badge badge-pill badge-secondary">Code</span>
+                                    <span class="badge badge-pill badge-secondary">AI</span>
+                                </div>
+                                <br>
+                                <div>
+                                    <button class="btn btn-light btn-small"><span class="mdi mdi-share">&nbsp; Share</span></button>
+                                    <button class="btn btn-light btn-small"><span class="mdi mdi-pencil">&nbsp; Edit</span></button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="post_detail">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore incidunt molestiae 
+                                    deleniti magni suscipit sed, explicabo obcaecati molestias nobis laudantium nisi doloribus 
+                                    perferendis nemo cupiditate saepe vitae necessitatibus, harum rerum.
+                                </p>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore incidunt molestiae 
+                                    deleniti magni suscipit sed, explicabo obcaecati molestias nobis laudantium nisi doloribus 
+                                    perferendis nemo cupiditate saepe vitae necessitatibus, harum rerum.
+                                </p>
+                            </div>
+                            <div class="post_comments">
+                                <h6><strong>2 Comments</strong></h6>
+                                <hr>
+                                <!-- Loop this div for every comment item -->
+                                <div class="media forum_comment">
+                                    <img src="assets/img/ favicon.png" class="mr-3 comment-profile-pic" alt="profile pic">
+                                    <div class="media-body">
+                                        <h6 class="mt-0"><a href="#" style="font-weight: bold;">Collins</a> - <i>2 days ago</i></h6>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. 
+                                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. 
+                                    </div>
+                                </div>
+                                <!-- loop ends here -->
+                                <div class="media forum_comment">
+                                    <img src="assets/img/ favicon.png" class="mr-3 comment-profile-pic" alt="profile pic">
+                                    <div class="media-body">
+                                        <h6 class="mt-0"><a href="#" style="font-weight: bold;">Collins</a> - <i>2 days ago</i></h6>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. 
+                                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Form to add comment -->
+                            <div class="add_comment">
+                                <form action="" class="form">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" rows="3" placeholder="Add comment here"></textarea>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Add Comment</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <h5>Stats</h5>
+                    <hr>
+                    <div>
+                        <span class="mdi mdi-message">&nbsp; 0 Answers</span> &nbsp;&nbsp;
+                        <span class="mdi mdi-eye">&nbsp; 0 Views</span> &nbsp;&nbsp;
+                        <span class="mdi mdi-arrow-up">&nbsp; 0 Votes</span> &nbsp;&nbsp;
+                    </div>
+                </div>
+                <div class="card">
+                    <h5>Related Questions</h5>
+                    <hr>
+                    <!-- Loop this div for every item -->
+                    <div style="border-bottom: 1px dashed rgb(238, 238, 238); margin-bottom: .5rem;">
+                        <a href="http://">Link to some very long post goes here</a>
+                        <p>
+                            <small>Asked by <a href="">Ahmed Zaky</a> - 20 Answers</small>
+                        </p>
+                    </div>
+                    <!-- loop ends here -->
+                    <div style="border-bottom: 1px dashed rgb(238, 238, 238); margin-bottom: .5rem;">
+                        <a href="http://">Link to some very long post goes here</a>
+                        <p>
+                            <small>Asked by <a href="">Ahmed Zaky</a> - 20 Answers</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

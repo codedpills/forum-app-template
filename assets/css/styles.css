@@ -1,0 +1,32 @@
+.main-content-area {
+    background-color: #fbfbfb;
+}
+
+.forum-content-display {
+    margin-top: 40px;
+}
+
+.forum-content-display a:hover , .forum-content-display a:hover {
+    text-decoration: none;
+}
+
+.card {
+    padding: 1rem;
+    min-height: 8rem;
+    margin: .5rem;
+}
+
+.post_detail, .post_comments {
+   margin-bottom: 2rem;
+}
+
+.comment-profile-pic {
+    width: 80px;
+    height: 80px;
+}
+
+.forum_comment {
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed rgb(233, 231, 231);
+    padding-bottom: 1rem;
+}
